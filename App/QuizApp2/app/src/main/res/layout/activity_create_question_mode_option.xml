@@ -1,0 +1,48 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+
+    <com.matty_christopher.quizapp.FontTextView
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose Mode"
+        android:id="@+id/choose_mode_header"
+        android:layout_marginTop="40dp"
+        android:textSize="43sp"
+        android:textColor="#00BFFF"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        tools:ignore="HardcodedText" />
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:textSize="20sp"
+        android:id="@+id/create_group_btn"
+        android:text="Create Group"
+        android:layout_below="@+id/choose_mode_header"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="72dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:textSize="20sp"
+        android:id="@+id/create_on_own_btn"
+        android:text="On your own"
+        android:layout_marginTop="47dp"
+        android:layout_below="@+id/create_group_btn"
+        android:layout_marginLeft="45dp"
+        android:layout_marginRight="45dp"
+        tools:ignore="HardcodedText" />
+
+
+</RelativeLayout>

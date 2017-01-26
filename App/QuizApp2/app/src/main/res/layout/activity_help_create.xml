@@ -1,0 +1,112 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e0e0e0"
+    android:id="@+id/helpLayout"
+    tools:ignore="Overdraw">
+
+    <com.matty_christopher.quizapp.FontTextView
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="About Create"
+        android:id="@+id/header"
+        android:layout_marginTop="10dp"
+        android:textSize="40sp"
+        android:textColor="#00BFFF"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        tools:ignore="HardcodedText" />
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header"
+        android:scrollbarThumbVertical="@drawable/cell_shape"
+        android:layout_marginBottom="15dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginTop="5dp">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="New Quiz"
+        android:id="@+id/textView7"
+        android:textColor="#ff000d"
+        android:textSize="25sp"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="The New quiz button allows you to create a new quiz. Quizzes can then have questions added to them and be played. Simply Enter a quiz name and password.The app will then check if a quiz already has that name or not."
+        android:id="@+id/textView8"
+        android:layout_below="@+id/textView7"
+        android:textColor="#060606"
+        android:textAlignment="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="6dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="New Question"
+        android:id="@+id/textView9"
+        android:textColor="#0800ff"
+        android:textSize="25sp"
+        android:layout_below="@+id/textView8"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="This button allows you to add a question to an existing quiz. Simply enter a quizzes details and choose whether you want to create as a group or on your own.\n Questions created as a group wont be available to play until the question is filled in and the creator submits as complete"
+        android:id="@+id/textView10"
+        android:textColor="#060606"
+        android:textAlignment="center"
+        android:layout_below="@+id/textView9"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="View Groups"
+        android:id="@+id/textView11"
+        android:textColor="#0fc925"
+        android:textSize="25sp"
+        android:layout_below="@+id/textView10"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Here you can see if you are in any groups. Simply select a row to edit which will then take you to the question where you can fill in your assigned part."
+        android:id="@+id/textView12"
+        android:textColor="#060606"
+        android:textAlignment="center"
+        android:layout_below="@+id/textView11"
+        android:layout_centerHorizontal="true"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="10dp" />
+</RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

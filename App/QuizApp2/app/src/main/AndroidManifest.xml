@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.matty_christopher.quizapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:fullBackupContent="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="UnusedAttribute">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".login"
+            android:label="@string/title_activity_login"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".register"
+            android:label="register"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".homepage"
+            android:label="@string/title_activity_homepage"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".leaderboard"
+            android:label="leaderboard"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Create_quiz"
+            android:label="create_home"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Choose_mode"
+            android:label="choose_mode"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Create_homepage"
+            android:label="@string/title_activity_create_homepage"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".View_Groups"
+            android:label="@string/title_activity_view__groups"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Create_question_start"
+            android:label="@string/title_activity_create_question_start"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Create_question_mode_option"
+            android:label="Create_question_mode_option"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Add_Question"
+            android:label="@string/title_activity_add__question"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Edit_question"
+            android:label="@string/title_activity_edit_question"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AddGroup"
+            android:label="AddGroup"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Question_template"
+            android:label="@string/title_activity_question_template"
+            android:configChanges="orientation"
+            android:keepScreenOn="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Play_ready_panel"
+            android:label="@string/title_activity_play_ready_panel"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Play_choose_quiz"
+            android:label="@string/title_activity_play_choose_quiz"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Stats"
+            android:label="@string/title_activity_stats"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.popUp" />
+        <activity
+            android:name=".Head2Head_home"
+            android:label="@string/title_activity_head2_head_home"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Head2Head_create"
+            android:label="@string/title_activity_head2_head_create"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Head2Head_matches"
+            android:label="@string/title_activity_head2_head_matches"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".H2Head_view_invites"
+            android:label="@string/title_activity_h2_head_view_invites"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Profile"
+            android:label="@string/title_activity_profile"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.popUp" />
+        <activity
+            android:name=".Show_User_Quizzes"
+            android:label="@string/title_activity_show__user__quizzes"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.popUp" />
+        <activity
+            android:name=".MatchView"
+            android:label="@string/title_activity_match_view"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Help_create"
+            android:label="@string/title_activity_help_create"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.popUp"/>
+    </application>
+
+</manifest>

@@ -1,0 +1,17 @@
+
+For the interim report you should have (and this is all you need):
+
+1) A literature review written summarizing relevant background information and academic papers.
+2) An app review of summary of at least 6, but preferably more depending on if there are many for your topic (e.g., 8), relevant apps with pros and cons, and how your app is different.
+3) A description of the design of your app
+4) How you will implement it
+5)Your plans for evaluation and testing of the app. 
+
+The above doesn't have to be written to perfection but just have a good chunk of it written out so it can almost go straight into your final report.
+If you are wondering what it looks like, it is basically a skeleton of the final report  with the intro, and app reviews written out. The app design, implemention, and evaluation sections will likely change once you've actually done the project, but that is just an initial description showing you have thoughts and ideas.
+
+Risk assessment, is just a small paragraph on what things you can imagine might go wrong. Like the most challenging part of what you are about to program and other things you imagine might be a challenge what your contingency plan might be. This risk assessment part is just for you to have a think about it and is not really a big deal.
+
+I've sent this to most of you already but attached is an example of a previous final report from a student which received good marks, as well as a previous interim report. 
+
+I can provide you with ONE ROUND of feedback on your interim report before you submit as long as you send it to me 5 WORKING DAYS before the interim report and risk assessment submission deadline.

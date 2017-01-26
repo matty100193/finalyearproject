@@ -1,0 +1,105 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+
+    <com.matty_christopher.quizapp.FontTextView
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose Quiz"
+        android:id="@+id/choose_quiz_header"
+        android:layout_marginTop="40dp"
+        android:textSize="43sp"
+        android:textColor="#00BFFF"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        tools:ignore="HardcodedText" />
+
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:textSize="30sp"
+        android:id="@+id/qstart_choose_quiz_btn"
+        android:text="Submit"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="52dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Quiz name:"
+        android:textColor="#000000"
+        android:id="@+id/textView"
+        android:layout_below="@+id/choose_quiz_header"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="35dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        tools:ignore="HardcodedText" />
+
+    <AutoCompleteTextView
+        android:inputType="text"
+        android:imeOptions="actionNext"
+        android:id="@+id/quiz_name_check"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:textStyle="italic"
+        android:textColor="#000000"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Quiz password:"
+        android:textColor="#000000"
+        android:id="@+id/textView2"
+        android:layout_below="@+id/quiz_name_check"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignStart="@+id/textView"
+        android:layout_marginTop="20dp"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:inputType="textPassword"
+        android:id="@+id/quiz_password_check"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:textStyle="italic"
+        android:textColor="#000000"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="View Your Quizzes"
+        android:textColor="#f00014"
+        android:id="@+id/txt_btn"
+        android:layout_below="@+id/quiz_password_check"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp" />
+
+
+</RelativeLayout>

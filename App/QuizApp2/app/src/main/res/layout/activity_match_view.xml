@@ -1,0 +1,102 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+
+    <com.matty_christopher.quizapp.FontTextView
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Match Details"
+        android:layout_marginTop="35dp"
+        android:textSize="45sp"
+        android:textColor="#00BFFF"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/view"
+        tools:ignore="HardcodedText" />
+
+
+
+    <com.matty_christopher.quizapp.FontTextView
+        android:id="@+id/score_oppo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:text="0"
+        android:textColor="#000000"
+        android:layout_alignBottom="@+id/opponent_header"
+        android:layout_toRightOf="@+id/opponent_header"
+        android:layout_toEndOf="@+id/opponent_header"
+        android:layout_marginLeft="25dp" />
+
+    <com.matty_christopher.quizapp.FontTextView
+        android:id="@+id/score_you"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:text="0"
+        android:textColor="#000000"
+        android:layout_alignTop="@+id/you_header"
+        android:layout_toRightOf="@+id/you_header"
+        android:layout_toEndOf="@+id/you_header"
+        android:layout_marginLeft="25dp" />
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="You:"
+        android:id="@+id/you_header"
+        android:textSize="30sp"
+        android:textColor="#1ecc19"
+        android:layout_marginTop="53dp"
+        android:layout_below="@+id/view"
+        android:layout_alignLeft="@+id/submit"
+        android:layout_alignStart="@+id/submit" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Opponent:"
+        android:id="@+id/opponent_header"
+        android:textSize="30sp"
+        android:textColor="#00BFFF"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/you_header"
+        android:layout_alignStart="@+id/you_header" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Waiting for Opponent"
+        android:textSize="30sp"
+        android:textColor="#282828"
+        android:id="@+id/status"
+        android:layout_above="@+id/submit"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:textSize="30sp"
+        android:id="@+id/submit"
+        android:text="Close"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="52dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        tools:ignore="HardcodedText" />
+
+</RelativeLayout>

@@ -1,0 +1,127 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+
+    <com.matty_christopher.quizapp.FontTextView
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose a quiz:"
+        android:id="@+id/header"
+        android:layout_marginTop="40dp"
+        android:textSize="25sp"
+        android:textColor="#00BFFF"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:inputType="text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:id="@+id/searchBox"
+        android:layout_below="@+id/header"
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_toLeftOf="@+id/imageView"
+        android:layout_toStartOf="@+id/imageView"
+        android:layout_marginRight="10dp" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:background="@null"
+        android:contentDescription="search"
+        android:src="@drawable/search_icon"
+        android:layout_alignTop="@+id/searchBox"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="30dp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:textSize="30sp"
+        android:id="@+id/submit"
+        android:text="Play"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="52dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        tools:ignore="HardcodedText" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="horizontal"
+        android:scrollbarThumbVertical="@drawable/cell_shape"
+        android:layout_below="@+id/searchBox"
+        android:layout_above="@+id/submit"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/scrollView"
+        android:fillViewport="false">
+
+
+        <TableLayout
+            android:stretchColumns="0,1,2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/group_table"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="13dp">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_height="match_parent"
+                    android:text="quiz name:"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:layout_width="50dp"
+                    android:layout_marginBottom="15dp"
+                    android:id="@+id/quiz_name"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:text="Creator:"
+                    android:textColor="#000000"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_width="75dp"
+                    android:layout_marginBottom="15dp"
+                    android:id="@+id/creator"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                android:text="No questions:"
+                android:textColor="#000000"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_width="50dp"
+                android:layout_marginBottom="15dp"
+                android:id="@+id/no_questions"
+                    tools:ignore="HardcodedText" />
+
+
+            </TableRow>
+
+
+
+        </TableLayout>
+
+    </ScrollView>
+
+
+
+</RelativeLayout>

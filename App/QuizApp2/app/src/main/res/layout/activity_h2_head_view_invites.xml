@@ -1,0 +1,109 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+    <com.matty_christopher.quizapp.FontTextView
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Invites"
+        android:id="@+id/add_group_header"
+        android:layout_marginTop="46dp"
+        android:textSize="45sp"
+        android:textColor="#00BFFF"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        tools:ignore="HardcodedText" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="vertical"
+        android:scrollbarThumbVertical="@drawable/cell_shape"
+        android:layout_below="@+id/add_group_header"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/scrollView"
+        android:layout_above="@+id/accept"
+        android:layout_marginBottom="10dp"
+        android:fillViewport="false">
+
+
+        <TableLayout
+            android:stretchColumns="0,1,2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/invites_table"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:text="Match id:"
+                    android:textColor="#000000"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_width="30dp"
+                    android:layout_marginBottom="15dp"
+                    android:id="@+id/invite_id"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:text="Challenger:"
+                    android:textColor="#000000"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_width="100dp"
+                    android:layout_marginBottom="15dp"
+                    android:id="@+id/challenger"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:layout_height="match_parent"
+                    android:text="Time left:"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:layout_width="50dp"
+                    android:layout_marginBottom="15dp"
+                    android:id="@+id/date"
+                    tools:ignore="HardcodedText" />
+
+
+
+            </TableRow>
+
+
+
+        </TableLayout>
+
+    </ScrollView>
+
+    <ImageButton
+        android:layout_width="70dp"
+        android:layout_height="60dp"
+        android:id="@+id/accept"
+        android:contentDescription="@string/description"
+        android:background="@drawable/accept"
+        android:layout_marginBottom="41dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/add_group_header"
+        android:layout_alignStart="@+id/add_group_header" />
+
+    <ImageButton
+        android:layout_width="70dp"
+        android:layout_height="60dp"
+        android:id="@+id/reject"
+        android:contentDescription="@string/description"
+        android:background="@drawable/reject"
+        android:layout_alignTop="@+id/accept"
+        android:layout_alignRight="@+id/add_group_header"
+        android:layout_alignEnd="@+id/add_group_header" />
+
+
+</RelativeLayout>

@@ -1,0 +1,186 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@drawable/background">
+
+    <View android:id="@+id/emiter_top_left"
+
+        android:layout_marginTop="0dp"
+        android:layout_width="1dp"
+        android:layout_height="1dp" />
+
+    <View android:id="@+id/emiter_top_right"
+        android:layout_gravity="right"
+        android:layout_marginTop="0dp"
+        android:layout_width="1dp"
+        android:layout_height="1dp"
+        android:layout_alignParentRight="true" />
+
+    <TextView
+        android:gravity="center"
+        android:maxLines="3"
+        android:minLines="3"
+        android:maxLength="105"
+        android:textSize="20sp"
+        android:id="@+id/question_text_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="italic"
+        android:textColor="#000000"
+        android:layout_below="@+id/live1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp" />
+
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/button_template"
+        android:id="@+id/answer1"
+        android:layout_below="@+id/question_text_edit"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:text="answer 1"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/answer2"
+        android:background="@drawable/button_template"
+        android:text="answer 2"
+        android:layout_below="@+id/answer1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="5dp"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/button_template"
+        android:id="@+id/answer3"
+        android:text="answer 3"
+        android:layout_below="@+id/answer2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="5dp"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/button_template"
+        android:id="@+id/answer4"
+        android:text="answer 4"
+        android:layout_below="@+id/answer3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="1dp"
+        android:layout_alignParentTop="false"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentLeft="false"
+        android:layout_marginBottom="3dp"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:textSize="30sp"
+        android:id="@+id/save_question_btn"
+        android:text="Submit"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:layout_width="110dp"
+        android:layout_height="50dp"
+        android:visibility="invisible"
+        android:text="Next"
+        android:id="@+id/next"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:layout_alignRight="@+id/answer4"
+        android:layout_alignEnd="@+id/answer4"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:layout_width="110dp"
+        android:layout_height="50dp"
+        android:visibility="invisible"
+        android:text="Stats"
+        android:id="@+id/stats"
+        tools:ignore="HardcodedText"
+        android:layout_alignBottom="@+id/save_question_btn"
+        android:layout_alignLeft="@+id/answer4"
+        android:layout_alignStart="@+id/answer4" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="0/0"
+        android:textColor="#00BFFF"
+        android:textSize="18sp"
+        android:id="@+id/position"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="26dp"
+        tools:ignore="HardcodedText" />
+
+    <ImageView
+        android:id="@+id/live1"
+        android:layout_width="25dp"
+        android:layout_height="30dp"
+        android:src="@drawable/lives"
+        android:contentDescription="@string/description"
+        android:layout_alignTop="@+id/position"
+        android:layout_toLeftOf="@+id/live2"
+        android:layout_toStartOf="@+id/live2" />
+
+    <ImageView
+        android:id="@+id/live2"
+        android:layout_width="25dp"
+        android:layout_height="30dp"
+        android:src="@drawable/lives"
+        android:contentDescription="@string/description"
+        android:layout_alignTop="@+id/live1"
+        android:layout_alignRight="@+id/save_question_btn"
+        android:layout_alignEnd="@+id/save_question_btn" />
+
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:visibility="invisible"
+        android:id="@+id/ratingBar"
+        android:numStars="5"
+        android:rating="5"
+        android:stepSize="0.5"
+        android:layout_below="@+id/answer4"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="2dp" />
+
+
+
+
+
+</RelativeLayout>

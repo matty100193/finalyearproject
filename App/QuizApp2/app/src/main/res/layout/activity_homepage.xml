@@ -1,0 +1,100 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+
+    <com.matty_christopher.quizapp.FontTextView
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome"
+        android:layout_marginTop="50dp"
+        android:textSize="50sp"
+        android:textColor="#00BFFF"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/view"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:textSize="25sp"
+        android:text="Create"
+        android:id="@+id/hm_createQuiz_btn"
+        tools:ignore="HardcodedText"
+        android:layout_below="@+id/username_text"
+        android:layout_alignLeft="@+id/hm_play_btn"
+        android:layout_alignStart="@+id/hm_play_btn"
+        android:layout_alignRight="@+id/hm_play_btn"
+        android:layout_alignEnd="@+id/hm_play_btn"
+        android:layout_marginTop="15dp" />
+
+    <Button
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:textSize="25sp"
+        android:text="Play"
+        android:id="@+id/hm_play_btn"
+        android:layout_below="@+id/hm_createQuiz_btn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="20dp"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:textSize="25sp"
+        android:text="LeaderBoards"
+        android:id="@+id/hm_leaderboard_btn"
+        android:layout_below="@+id/hm_play_btn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="20dp"
+        tools:ignore="HardcodedText" />
+
+    <com.matty_christopher.quizapp.FontTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="User"
+        android:textSize="30sp"
+        android:id="@+id/username_text"
+        android:textColor="#f00f0a"
+        android:layout_below="@+id/view"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        tools:ignore="HardcodedText"
+        android:layout_marginBottom="10dp" />
+
+    <ImageView
+        android:id="@+id/logout_img"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/logout"
+        android:contentDescription="@string/description"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="22dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/profile_img"
+        android:src="@drawable/profile"
+        android:contentDescription="@string/description"
+        android:layout_alignBottom="@+id/logout_img"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

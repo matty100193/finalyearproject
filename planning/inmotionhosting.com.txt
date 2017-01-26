@@ -1,0 +1,5 @@
+Your cPanel username is: mattyc5
+Your cPanel password is: mellon100
+
+account info login:m.christopher@hotmail.co.uk
+password:mellon100

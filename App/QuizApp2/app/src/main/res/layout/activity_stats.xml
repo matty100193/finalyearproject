@@ -1,0 +1,70 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e0e0e0"
+    android:id="@+id/statsLayout"
+    tools:ignore="Overdraw">
+
+    <com.matty_christopher.quizapp.FontTextView
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stats"
+        android:id="@+id/header"
+        android:layout_marginTop="1dp"
+        android:textSize="65sp"
+        android:textColor="#00BFFF"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="answer1:"
+        android:id="@+id/answer1_txt"
+        android:layout_marginBottom="63dp"
+        android:textColor="#00BFFF"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/header"
+        android:layout_alignStart="@+id/header"
+        tools:ignore="HardcodedText" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="answer2:"
+        android:id="@+id/answer2_txt"
+        android:textColor="#00BFFF"
+        android:layout_marginTop="18dp"
+        android:layout_alignTop="@+id/answer1_txt"
+        android:layout_alignLeft="@+id/answer1_txt"
+        android:layout_alignStart="@+id/answer1_txt"
+        tools:ignore="HardcodedText" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="answer3:"
+        android:id="@+id/answer3_txt"
+        android:textColor="#00BFFF"
+        android:layout_below="@+id/answer2_txt"
+        android:layout_alignLeft="@+id/answer2_txt"
+        android:layout_alignStart="@+id/answer2_txt"
+        tools:ignore="HardcodedText" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="answer4:"
+        android:id="@+id/answer4_txt"
+        android:textColor="#00BFFF"
+        android:layout_below="@+id/answer3_txt"
+        android:layout_alignLeft="@+id/answer3_txt"
+        android:layout_alignStart="@+id/answer3_txt"
+        tools:ignore="HardcodedText" />
+
+
+</RelativeLayout>
